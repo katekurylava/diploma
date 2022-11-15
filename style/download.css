@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+.download-container {
+    margin: 114px auto;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-container h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    padding: 17.5px 0;
+}
+
+.download-container__subtitle {
+    margin: 5.29px auto 47.71px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.download-container__button {
+    width: 369px;
+    height: 77.58px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 0 auto;
+    background: #FF4343;
+    border: none;
+    cursor: pointer;
+}
+
+.download-container__button:hover {
+    background: #E71414;
+}
+
+.download-container__button:focus {
+    outline: none !important;
+    background: #FF4343;
+    box-shadow: 4px 4px 30px #FF4343;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+
+    .download-container {
+        margin: 77.51px auto 78px;
+        width: 984px;
+    }
+
+    .download-container h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .download-container__subtitle {
+        margin: 5.29px auto 50.14px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .download-container__button {
+        width: 313.15px;
+        height: 77.58px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) and (max-width: 767px) {
+
+    .download-container {
+        width: 280px;
+        margin: 34.51px auto 45px;
+    }
+
+    .download-container h3 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .download-container__subtitle {
+        margin: 3px auto 13.42px;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .download-container__button {
+        width: 100%;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
