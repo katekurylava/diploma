@@ -1,0 +1,34 @@
+@mixin flexcolomn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin marg0auto {
+    margin: 0 auto;
+}
+
+@mixin wlaptop {
+    width: 1170px;
+}
+
+@mixin wtablet {
+    width: 984px;
+}
+
+@mixin wmobile {
+    width: 280px;
+}
+
+@mixin bn-shadow {
+    box-shadow: 4px 4px 30px $colorfocus;
+}
+
+@mixin fs-subtitle {
+    font-size: 18px;
+    line-height: 21px;
+}

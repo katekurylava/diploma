@@ -1,0 +1,100 @@
+.download-container {
+    margin: 114px auto;
+    @include wlaptop ();
+    @include flexcolomn ();
+
+    h3 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        padding: 17.5px 0;
+    }
+
+    .download-container__subtitle {
+        margin: 5.29px auto 47.71px;
+        font-weight: 700;
+        @include fs-subtitle ();
+        text-transform: uppercase;
+    }
+
+    .download-container__button {
+        width: 369px;
+        height: 77.58px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        @include marg0auto ();
+        background: $colorbutton;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: $bghov;
+        }
+
+        &:focus {
+            outline: none !important;
+            background: $colorfocus;
+            @include bn-shadow ();
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .download-container {
+        margin: 77.51px auto 78px;
+        @include wtablet ();
+
+        h3 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .download-container__subtitle {
+            margin: 5.29px auto 50.14px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .download-container__button {
+            width: 313.15px;
+            height: 77.58px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) and (max-width: 767px) {
+
+    .download-container {
+        @include wmobile ();
+        margin: 34.51px auto 45px;
+
+        h3 {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .download-container__subtitle {
+            margin: 3px auto 13.42px;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+        }
+
+        .download-container__button {
+            width: 100%;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}

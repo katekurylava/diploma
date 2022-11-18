@@ -2,7 +2,9 @@
   "devDependencies": {
     "parcel": "^2.7.0",
     "sass": "^1.55.0"
+  },
+
+  "scripts": {
+    "watch": "parcel index.html --open --port 3000"
   }
-  // "scripts": {}
-  // "watch": {"parcel index.html--open--port 3000"}
 }
